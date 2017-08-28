@@ -24756,19 +24756,19 @@
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\eyane\\.nuget\\packages\\": {}
+    "C:\\Users\\estebany\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\eyane\\Documents\\Proyectos\\Net-Baires\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\HangMan.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\estebany\\Documents\\GitHub\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\HangMan.UWP.csproj",
       "projectName": "HangMan.UWP",
-      "projectPath": "C:\\Users\\eyane\\Documents\\Proyectos\\Net-Baires\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\HangMan.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\eyane\\Documents\\Proyectos\\Net-Baires\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\project.json",
-      "packagesPath": "C:\\Users\\eyane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eyane\\Documents\\Proyectos\\Net-Baires\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\obj\\",
+      "projectPath": "C:\\Users\\estebany\\Documents\\GitHub\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\HangMan.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\estebany\\Documents\\GitHub\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\project.json",
+      "packagesPath": "C:\\Users\\estebany\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\estebany\\Documents\\GitHub\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\eyane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\estebany\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
@@ -24778,8 +24778,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\eyane\\Documents\\Proyectos\\Net-Baires\\XamarinParty\\HangMan\\HangMan\\HangMan\\HangMan.Forms.csproj": {
-              "projectPath": "C:\\Users\\eyane\\Documents\\Proyectos\\Net-Baires\\XamarinParty\\HangMan\\HangMan\\HangMan\\HangMan.Forms.csproj"
+            "C:\\Users\\estebany\\Documents\\GitHub\\XamarinParty\\HangMan\\HangMan\\HangMan\\HangMan.Forms.csproj": {
+              "projectPath": "C:\\Users\\estebany\\Documents\\GitHub\\XamarinParty\\HangMan\\HangMan\\HangMan\\HangMan.Forms.csproj"
             }
           }
         }
@@ -24787,10 +24787,7 @@
     },
     "dependencies": {
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
-      "Xamarin.Forms": {
-        "target": "Package",
-        "version": "[2.3.4.267, )"
-      }
+      "Xamarin.Forms": "2.3.4.267"
     },
     "frameworks": {
       "uap10.0.10586": {}
