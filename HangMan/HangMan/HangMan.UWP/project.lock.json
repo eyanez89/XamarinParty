@@ -2224,6 +2224,9 @@
       "HangMan.Data/1.0.0": {
         "type": "project"
       },
+      "HangMan.DependencyInterface/1.0.0": {
+        "type": "project"
+      },
       "HangMan.Forms/1.0.0": {
         "type": "project",
         "dependencies": {
@@ -2232,8 +2235,14 @@
           "HangMan.ViewModels": "1.0.0"
         }
       },
-      "HangMan.Service/1.0.0": {
+      "HangMan.Model/1.0.0": {
         "type": "project"
+      },
+      "HangMan.Service/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HangMan.Model": "1.0.0"
+        }
       },
       "HangMan.ViewModels/1.0.0": {
         "type": "project"
@@ -4545,6 +4554,9 @@
       "HangMan.Data/1.0.0": {
         "type": "project"
       },
+      "HangMan.DependencyInterface/1.0.0": {
+        "type": "project"
+      },
       "HangMan.Forms/1.0.0": {
         "type": "project",
         "dependencies": {
@@ -4553,8 +4565,14 @@
           "HangMan.ViewModels": "1.0.0"
         }
       },
-      "HangMan.Service/1.0.0": {
+      "HangMan.Model/1.0.0": {
         "type": "project"
+      },
+      "HangMan.Service/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HangMan.Model": "1.0.0"
+        }
       },
       "HangMan.ViewModels/1.0.0": {
         "type": "project"
@@ -6902,6 +6920,9 @@
       "HangMan.Data/1.0.0": {
         "type": "project"
       },
+      "HangMan.DependencyInterface/1.0.0": {
+        "type": "project"
+      },
       "HangMan.Forms/1.0.0": {
         "type": "project",
         "dependencies": {
@@ -6910,8 +6931,14 @@
           "HangMan.ViewModels": "1.0.0"
         }
       },
-      "HangMan.Service/1.0.0": {
+      "HangMan.Model/1.0.0": {
         "type": "project"
+      },
+      "HangMan.Service/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HangMan.Model": "1.0.0"
+        }
       },
       "HangMan.ViewModels/1.0.0": {
         "type": "project"
@@ -9232,6 +9259,9 @@
       "HangMan.Data/1.0.0": {
         "type": "project"
       },
+      "HangMan.DependencyInterface/1.0.0": {
+        "type": "project"
+      },
       "HangMan.Forms/1.0.0": {
         "type": "project",
         "dependencies": {
@@ -9240,8 +9270,14 @@
           "HangMan.ViewModels": "1.0.0"
         }
       },
-      "HangMan.Service/1.0.0": {
+      "HangMan.Model/1.0.0": {
         "type": "project"
+      },
+      "HangMan.Service/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HangMan.Model": "1.0.0"
+        }
       },
       "HangMan.ViewModels/1.0.0": {
         "type": "project"
@@ -11598,6 +11634,9 @@
       "HangMan.Data/1.0.0": {
         "type": "project"
       },
+      "HangMan.DependencyInterface/1.0.0": {
+        "type": "project"
+      },
       "HangMan.Forms/1.0.0": {
         "type": "project",
         "dependencies": {
@@ -11606,8 +11645,14 @@
           "HangMan.ViewModels": "1.0.0"
         }
       },
-      "HangMan.Service/1.0.0": {
+      "HangMan.Model/1.0.0": {
         "type": "project"
+      },
+      "HangMan.Service/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HangMan.Model": "1.0.0"
+        }
       },
       "HangMan.ViewModels/1.0.0": {
         "type": "project"
@@ -13928,6 +13973,9 @@
       "HangMan.Data/1.0.0": {
         "type": "project"
       },
+      "HangMan.DependencyInterface/1.0.0": {
+        "type": "project"
+      },
       "HangMan.Forms/1.0.0": {
         "type": "project",
         "dependencies": {
@@ -13936,8 +13984,14 @@
           "HangMan.ViewModels": "1.0.0"
         }
       },
-      "HangMan.Service/1.0.0": {
+      "HangMan.Model/1.0.0": {
         "type": "project"
+      },
+      "HangMan.Service/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HangMan.Model": "1.0.0"
+        }
       },
       "HangMan.ViewModels/1.0.0": {
         "type": "project"
@@ -16294,6 +16348,9 @@
       "HangMan.Data/1.0.0": {
         "type": "project"
       },
+      "HangMan.DependencyInterface/1.0.0": {
+        "type": "project"
+      },
       "HangMan.Forms/1.0.0": {
         "type": "project",
         "dependencies": {
@@ -16302,8 +16359,14 @@
           "HangMan.ViewModels": "1.0.0"
         }
       },
-      "HangMan.Service/1.0.0": {
+      "HangMan.Model/1.0.0": {
         "type": "project"
+      },
+      "HangMan.Service/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HangMan.Model": "1.0.0"
+        }
       },
       "HangMan.ViewModels/1.0.0": {
         "type": "project"
@@ -24732,10 +24795,20 @@
       "path": "../HangMan.Data/HangMan.Data.csproj",
       "msbuildProject": "../HangMan.Data/HangMan.Data.csproj"
     },
+    "HangMan.DependencyInterface/1.0.0": {
+      "type": "project",
+      "path": "../HangMan.DependencyInterface/HangMan.DependencyInterface.csproj",
+      "msbuildProject": "../HangMan.DependencyInterface/HangMan.DependencyInterface.csproj"
+    },
     "HangMan.Forms/1.0.0": {
       "type": "project",
       "path": "../HangMan/HangMan.Forms.csproj",
       "msbuildProject": "../HangMan/HangMan.Forms.csproj"
+    },
+    "HangMan.Model/1.0.0": {
+      "type": "project",
+      "path": "../HangMan.Model/HangMan.Model.csproj",
+      "msbuildProject": "../HangMan.Model/HangMan.Model.csproj"
     },
     "HangMan.Service/1.0.0": {
       "type": "project",
@@ -24756,19 +24829,19 @@
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\estebany\\.nuget\\packages\\": {}
+    "C:\\Users\\eyane\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\estebany\\Documents\\GitHub\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\HangMan.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\eyane\\Documents\\Proyectos\\Net-Baires\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\HangMan.UWP.csproj",
       "projectName": "HangMan.UWP",
-      "projectPath": "C:\\Users\\estebany\\Documents\\GitHub\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\HangMan.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\estebany\\Documents\\GitHub\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\project.json",
-      "packagesPath": "C:\\Users\\estebany\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\estebany\\Documents\\GitHub\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\obj\\",
+      "projectPath": "C:\\Users\\eyane\\Documents\\Proyectos\\Net-Baires\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\HangMan.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\eyane\\Documents\\Proyectos\\Net-Baires\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\project.json",
+      "packagesPath": "C:\\Users\\eyane\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eyane\\Documents\\Proyectos\\Net-Baires\\XamarinParty\\HangMan\\HangMan\\HangMan.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\estebany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\eyane\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
@@ -24778,8 +24851,11 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\estebany\\Documents\\GitHub\\XamarinParty\\HangMan\\HangMan\\HangMan\\HangMan.Forms.csproj": {
-              "projectPath": "C:\\Users\\estebany\\Documents\\GitHub\\XamarinParty\\HangMan\\HangMan\\HangMan\\HangMan.Forms.csproj"
+            "C:\\Users\\eyane\\Documents\\Proyectos\\Net-Baires\\XamarinParty\\HangMan\\HangMan\\HangMan\\HangMan.Forms.csproj": {
+              "projectPath": "C:\\Users\\eyane\\Documents\\Proyectos\\Net-Baires\\XamarinParty\\HangMan\\HangMan\\HangMan\\HangMan.Forms.csproj"
+            },
+            "C:\\Users\\eyane\\Documents\\Proyectos\\Net-Baires\\XamarinParty\\HangMan\\HangMan\\HangMan.DependencyInterface\\HangMan.DependencyInterface.csproj": {
+              "projectPath": "C:\\Users\\eyane\\Documents\\Proyectos\\Net-Baires\\XamarinParty\\HangMan\\HangMan\\HangMan.DependencyInterface\\HangMan.DependencyInterface.csproj"
             }
           }
         }

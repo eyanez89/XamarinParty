@@ -13,7 +13,6 @@ namespace HangMan.Service
     public abstract class ServiceBase<T> : IServiceBase<T>
         where T : class, IEntity
     {
-        private string path;
         private Uri baseAddress;
         private string securityToken;
         private HttpClient m_HttpClient;
@@ -44,7 +43,7 @@ namespace HangMan.Service
             try
             {
                 // Get the response from the server url and REST path for the data  
-                var response = await m_HttpClient.GetAsync(new Uri(baseAddress, path));
+                var response = await m_HttpClient.GetAsync(baseAddress);
 
                 if (response.StatusCode == HttpStatusCode.Unauthorized)
                     throw new UnauthorizedAccessException("Access Denied");
@@ -61,12 +60,34 @@ namespace HangMan.Service
             }
         }
 
+        public async Task<T> Get(string path)
+        {
+            try
+            {
+                // Get the response from the server url and REST path for the data  
+                var response = await m_HttpClient.GetAsync(new Uri(baseAddress, path));
+
+                if (response.StatusCode == HttpStatusCode.Unauthorized)
+                    throw new UnauthorizedAccessException("Access Denied");
+
+                if (response.IsSuccessStatusCode)
+                    return JsonConvert.DeserializeObject<T>(await response.Content.ReadAsStringAsync());
+
+                throw new WebException(response.ReasonPhrase);
+            }
+            catch (Exception ex)
+            {
+                // TODO:        
+                throw ex;
+            }
+        }
+
         public async Task<T> Post(T entity)
         {
             try
             {
                 // Get the response from the server url and REST path for the data  
-                var response = await m_HttpClient.PostAsync(new Uri(baseAddress, path),
+                var response = await m_HttpClient.PostAsync(baseAddress,
                     new StringContent(JsonConvert.SerializeObject(entity), Encoding.UTF8, "application/json"));
 
                 if (response.StatusCode == HttpStatusCode.Unauthorized)

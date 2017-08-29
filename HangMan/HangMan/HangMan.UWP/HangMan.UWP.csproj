@@ -96,6 +96,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Implementations\NotificationService.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -152,6 +153,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HangMan.DependencyInterface\HangMan.DependencyInterface.csproj">
+      <Project>{8c77c2b3-84cf-4294-8745-416b80482cd0}</Project>
+      <Name>HangMan.DependencyInterface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HangMan\HangMan.Forms.csproj">
       <Project>{D813C023-D27A-4217-9230-4658C4DFFD7F}</Project>
       <Name>HangMan.Forms</Name>
@@ -159,7 +164,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomRender\" />
-    <Folder Include="Implementations\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
