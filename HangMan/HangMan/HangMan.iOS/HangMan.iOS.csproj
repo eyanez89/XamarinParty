@@ -154,6 +154,41 @@
   <ItemGroup>
     <Folder Include="CustomRender\" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\HangMan\Images\Hang.png">
+      <Link>Resources\Hang.png</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\HangMan\Images\Try_1.png">
+      <Link>Resources\Try_1.png</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\HangMan\Images\Try_2.png">
+      <Link>Resources\Try_2.png</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\HangMan\Images\Try_3.png">
+      <Link>Resources\Try_3.png</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\HangMan\Images\Try_4.png">
+      <Link>Resources\Try_4.png</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\HangMan\Images\Try_5.png">
+      <Link>Resources\Try_5.png</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\HangMan\Images\Try_6.png">
+      <Link>Resources\Try_6.png</Link>
+    </BundleResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.267\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.267\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

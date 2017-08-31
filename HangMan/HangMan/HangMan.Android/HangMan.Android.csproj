@@ -164,6 +164,41 @@
   <ItemGroup>
     <Folder Include="CustomRender\" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\HangMan\Images\Hang.png">
+      <Link>Resources\drawable\Hang.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\HangMan\Images\Try_1.png">
+      <Link>Resources\drawable\Try_1.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\HangMan\Images\Try_2.png">
+      <Link>Resources\drawable\Try_2.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\HangMan\Images\Try_3.png">
+      <Link>Resources\drawable\Try_3.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\HangMan\Images\Try_4.png">
+      <Link>Resources\drawable\Try_4.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\HangMan\Images\Try_5.png">
+      <Link>Resources\drawable\Try_5.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\HangMan\Images\Try_6.png">
+      <Link>Resources\drawable\Try_6.png</Link>
+    </AndroidResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
