@@ -33,19 +33,15 @@ namespace HangMan.Api.Controllers
         }
 
         [HttpPost]
-        [Route("api/Auth/Register")]
         [ResponseType(typeof(OAuthRefreshTokenSchema))]
-        public async Task<IHttpActionResult> Register(User user)
+        public async Task<IHttpActionResult> Post(User user)
         {
-            await userService.Add(user);
-
-            return Ok(new OAuthRefreshTokenSchema()
+            if (!ModelState.IsValid)
             {
-                Expires_in = AccessTokenExpiresIn,
-                Token_type = "Bearer",
-                Access_token = GetJwtToken(user.UserName, AccessTokenExpiresIn),
-                Refresh_token = GetJwtToken(user.UserName, RefreshTokenExpiresIn)
-            });
+                return BadRequest(ModelState);
+            }
+
+            return Ok(await userService.Add(user));
         }
 
         [Route("api/Auth/token")]

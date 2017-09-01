@@ -40,7 +40,7 @@ namespace HangMan.Service
             return serverGame;
         }
 
-        public async Task Win(Game game)
+        public async Task<Game> Win(Game game)
         {
             var serverWord = await db.Set<Word>().FirstOrDefaultAsync(p => p.Id == game.Word.Id);
             var serverPlayer = await db.Set<Player>().FirstOrDefaultAsync(p => p.Id == game.Player.Id);
@@ -52,12 +52,14 @@ namespace HangMan.Service
             game.Player = serverPlayer;
             game.Win = true;
 
-            AttachEntity(game);
+            var serverGame = AttachEntity(game);
 
             await db.SaveChangesAsync();
+
+            return serverGame;
         }
 
-        public async Task Loose(Game game)
+        public async Task<Game> Loose(Game game)
         {
             var serverWord = await db.Set<Word>().FirstOrDefaultAsync(p => p.Id == game.Word.Id);
             var serverPlayer = await db.Set<Player>().FirstOrDefaultAsync(p => p.Id == game.Player.Id);
@@ -69,9 +71,11 @@ namespace HangMan.Service
             game.Player = serverPlayer;
             game.Win = false;
 
-            AttachEntity(game);
+            var serverGame = AttachEntity(game);
 
             await db.SaveChangesAsync();
+
+            return serverGame;
         }
     }
 }

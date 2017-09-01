@@ -34,18 +34,18 @@ namespace HangMan.Api.Controllers
         [Route("api/Games/Win")]
         public async Task<IHttpActionResult> Win(Game game)
         {
-            await gameService.Win(game);
+            var serverGame = await gameService.Win(game);
 
-            return Ok();
+            return Ok(serverGame.Player);
         }
 
         [HttpPost]
         [Route("api/Games/Loose")]
         public async Task<IHttpActionResult> Loose(Game game)
         {
-            await gameService.Loose(game);
+            var serverGame = await gameService.Loose(game);
 
-            return Ok();
+            return Ok(serverGame.Player);
         }
     }
 }
