@@ -3,6 +3,8 @@ using HangMan.Data.EFContext;
 using HangMan.Service;
 using Microsoft.Owin;
 using Owin;
+using Swashbuckle.Application;
+using System.Linq;
 using System.Web.Http;
 
 [assembly: OwinStartup(typeof(HangMan.Api.Startup))]
@@ -15,6 +17,14 @@ namespace HangMan.Api
             var config = new HttpConfiguration();
 
             WebApiConfig.Register(config);
+
+            config.EnableSwagger(c =>
+            {
+                c.SingleApiVersion("v1", "HangMan API")
+                 .Description("API para el desarrollo de HangMan en Xamarin Party")
+                 .Contact(cc => cc.Name("Esteban Yañez").Email("eyanez.89@gmail.com"));
+                c.ResolveConflictingActions(x => x.First());
+            }).EnableSwaggerUi();
 
             ConfigureOAuth(app);
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);

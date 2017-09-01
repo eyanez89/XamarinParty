@@ -13,8 +13,8 @@ namespace HangMan.Service
 
         protected override async Task<User> AddOrModify(User user, EntityState? state = null)
         {
-            var serverPlayer = AttachEntity(user.Player);
-            var serverUser = AttachEntity(user, state:state);
+            var serverPlayer = user.Player.Id == default(int) ? AttachEntity(user.Player, state: EntityState.Added) : AttachEntity(user.Player);
+            var serverUser = AttachEntity(user, state: state);
             serverUser.Player = serverPlayer;
 
             await db.SaveChangesAsync();

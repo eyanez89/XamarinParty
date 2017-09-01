@@ -14,6 +14,7 @@ using System.Web.Http.Description;
 
 namespace HangMan.Api.Controllers
 {
+    [AllowAnonymous]
     public class AuthController : ApiController
     {
         private static string Secret { get { return ConfigurationManager.AppSettings.Get("Secret"); } }
