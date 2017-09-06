@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HangMan.Forms.HomePage"
+             Title="Detail">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Item" Clicked="AddWord" />
+    </ContentPage.ToolbarItems>
+    <Grid HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout BackgroundColor="Green" 
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand"
+                     Grid.Row="0">
+            <Label Text="EASY" 
+                   FontSize="Large"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="StartEasyGame"/>
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
+
+        <StackLayout BackgroundColor="Blue" 
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand"
+                     Grid.Row="1">
+            <Label Text="MEDIUM" 
+                   FontSize="Large"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="StartMediumGame"/>
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
+
+        <StackLayout BackgroundColor="Red" 
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand"
+                     Grid.Row="2">
+            <Label Text="HARD"
+                   FontSize="Large"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="StartHardGame"/>
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
+    </Grid>
+</ContentPage>

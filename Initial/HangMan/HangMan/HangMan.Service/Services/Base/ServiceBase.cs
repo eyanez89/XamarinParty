@@ -32,8 +32,8 @@ namespace HangMan.Service
         {
             var httpClient = new HttpClient();
             httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            if (string.IsNullOrEmpty(securityToken))
-                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", securityToken);
+            if (!string.IsNullOrEmpty(securityToken))
+                httpClient.DefaultRequestHeaders.Add("Authorization", "Bearer " + securityToken);
 
             return httpClient;
         }

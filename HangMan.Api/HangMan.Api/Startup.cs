@@ -21,8 +21,7 @@ namespace HangMan.Api
             config.EnableSwagger(c =>
             {
                 c.SingleApiVersion("v1", "HangMan API")
-                 .Description("API para el desarrollo de HangMan en Xamarin Party")
-                 .Contact(cc => cc.Name("Esteban Yañez").Email("eyanez.89@gmail.com"));
+                 .Description("API para el desarrollo de HangMan en Xamarin Party");
                 c.ResolveConflictingActions(x => x.First());
             }).EnableSwaggerUi();
 

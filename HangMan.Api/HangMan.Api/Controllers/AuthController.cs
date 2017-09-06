@@ -45,6 +45,7 @@ namespace HangMan.Api.Controllers
             return Ok(await userService.Add(user));
         }
 
+        [HttpGet]
         [Route("api/Auth/token")]
         [ResponseType(typeof(OAuthRefreshTokenSchema))]
         public async Task<IHttpActionResult> Post(string grant_type, string userName, string password)
@@ -60,6 +61,7 @@ namespace HangMan.Api.Controllers
                 return Unauthorized();
         }
 
+        [HttpGet]
         [Route("api/Auth/token")]
         [ResponseType(typeof(OAuthRefreshTokenSchema))]
         public async Task<IHttpActionResult> Post(string grant_type, string refresh_token)
